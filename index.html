@@ -4,8 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Al Hafiz Jewellers</title>
-    <script type="module" crossorigin src="./assets/index-BXlKiObR.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-oZgAUWi-.css">
+    
+    <!-- Firebase SDK -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyAXLnN_U94tCzp1UuWsIUhL78HJVjw2Lm4",
+        authDomain: "al-hafiz-jewellers.firebaseapp.com",
+        projectId: "al-hafiz-jewellers",
+        storageBucket: "al-hafiz-jewellers.firebasestorage.app",
+        messagingSenderId: "102713063571",
+        appId: "1:102713063571:web:a11035a87ed91d2d5d7566",
+        measurementId: "G-8X0TYEHJZ0"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
+    </script>
+
+    <script type="module" crossorigin src="./assets/index-BXlKiObR.js"></script>
   </head>
   <body>
     <div id="root"></div>
